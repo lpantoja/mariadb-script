@@ -1,6 +1,6 @@
 # MariaDB Installation and Upgrade Script
 
-This script automates the installation and upgrade of MariaDB on a Debian system. It performs the following tasks:
+This script automates the installation and upgrade of [MariaDB](https://mariadb.org/) on a Debian system. It performs the following tasks:
 
 ### Language Detection and Prompt:
   The script detects the system's default language and prompts the user to choose between English and Spanish if the system language is not already one of these two.
@@ -11,20 +11,19 @@ This script automates the installation and upgrade of MariaDB on a Debian system
   It creates the necessary directories and downloads the MariaDB signing key.
 
 ### Repository Configuration:
-  A custom MariaDB repository source list is created at /etc/apt/sources.list.d/mariadb.sources to ensure installation and upgrades are done from a trusted MariaDB mirror.
+  A custom [MariaDB repository](https://mariadb.org/download/?t=repo-config) source list is created at /etc/apt/sources.list.d/mariadb.sources to ensure installation and upgrades are done from a trusted [MariaDB mirror](https://downloads.mariadb.org/rest-api/mirrors).
 
 ### System Update:
   The script runs apt-get update to refresh the package index and ensures the system is up to date.
 
 ### MariaDB Installation or Upgrade:
-  If MariaDB is not already installed, the script installs the MariaDB server.
-  If MariaDB is already installed, it runs an upgrade to ensure the latest version is installed.
+  If [MariaDB](https://mariadb.org/) is not already installed, the script installs the [MariaDB server](https://mariadb.org/download/). If [MariaDB](https://mariadb.org/) is already installed, it runs an upgrade to ensure the latest version is installed.
 
 ### Color-Coded Output:
   The script uses color-coded messages for better user feedback:
-  - Green: Success messages
-  - Yellow: Informational messages
-  - Red: Error messages or interruptions
+  - ![](https://img.shields.io/static/v1?label=&message=&nbsp;&nbsp;&color=green) Green: Success messages
+  - ![](https://img.shields.io/static/v1?label=&message=&nbsp;&nbsp;&color=yellow) Yellow: Informational messages
+  - ![](https://img.shields.io/static/v1?label=&message=&nbsp;&nbsp;&color=red) Red: Error messages or interruptions
 
 ## Usage Instructions:
 
